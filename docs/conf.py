@@ -1,26 +1,16 @@
-# Configuration file for raw HTML passthrough in Sphinx
+import os
 
-project = 'My Landing Page'
+project = 'Fintech Legal Horizons'
 copyright = '2026'
-author = 'Author'
+author = 'Admin'
 
-# No extensions needed
+# Basic configuration to avoid Sphinx default templates
 extensions = []
-
-# Output setup
-html_title = 'My Page'
-
-# Read the Docs ke default theme ko disable karna
 html_theme = 'basic'
 
-# Aapki docs/ folder ki saari files (including index.html) ko build output mein copy karna
-html_static_path = ['.']
-
-# Default Sphinx layout templates ko override karna taake aapki index.html exact render ho
-html_additional_pages = {
-    'index': 'index.html'
-}
-
-# Unwanted Sphinx elements disable karna
+# Disable unnecessary Sphinx elements
 html_show_sphinx = False
 html_show_sourcelink = False
+
+# Force Sphinx to copy index.html directly
+html_extra_path = ['index.html']
