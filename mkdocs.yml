@@ -1,0 +1,9 @@
+site_name: Fintech Legal Horizons
+site_url: https://fintechlegalhorizons.readthedocs.io/
+
+nav:
+  - Home: index.html
+
+# Simple built-in theme
+theme:
+  name: mkdocs
